@@ -665,7 +665,9 @@
 	padding: .4em .8em;
 	border-radius: 3px
 }
-
+.protected input[type="password"] {
+	color: var(--text-color)
+}
 .protected input[type="submit"] {
 	background: var(--theme-color);
 	color: #fff;

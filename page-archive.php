@@ -10,7 +10,7 @@ $this->need('includes/header.php');
 ?>
 <div class="col-12" id="main" role="main">
 	<div id="search">
-	  	<input type="text" placeholder="搜索博客文章" name="" id="input_search" value="" />
+	  	<input type="text" placeholder="搜索博客文章" name="" id="input_search" value="" style="color: var(--text-color)"/>
         <a id="search-button"><span class="iconfont">&#xe82e;</span></a>
 	</div>
 	<div id="tag">
