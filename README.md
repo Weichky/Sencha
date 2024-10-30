@@ -1,0 +1,2 @@
+# Sencha
+Typecho theme Sencha
