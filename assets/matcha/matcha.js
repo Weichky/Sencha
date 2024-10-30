@@ -67,7 +67,7 @@ Prism.plugins.toolbar.registerButton('copy', {
     onClick: function (env) {
         var text = env.element.innerText;
         navigator.clipboard.writeText(text);
-        toast('已将代码复制到剪切板');
+        toast('已将代码复制到剪切板，不要乱搬呀～');
     }
 });
 //jquery.lazy.js loader
@@ -115,7 +115,7 @@ var linkTarget = function() {
     });
 }
 //适配 CopyDog 插件
-copydog_copied=function(){toast('成功复制到剪切板');}
+copydog_copied=function(){toast('成功复制到剪切板，不要乱搬呀～');}
 //Go to Top
 /**
  @description 页面垂直平滑滚动到指定滚动高度
@@ -247,18 +247,18 @@ if(typeof(allowDarkMode)!=undefined){
         if(matchaDark=='yes' && !$('body').hasClass('matcha-dark')){
             //根据用户设置，在前端自动关灯
             lightswitch('off');
-            toast('已为您自动关灯');
+            toast('已根据设置为您关灯');
         }
         else if(window.matchMedia('(prefers-color-scheme:dark)').matches){
             //跟随系统深色模式
             lightswitch('off');
-            toast('已为您自动关灯');
+            toast('已适配深色模式，为您自动关灯');
         }
-        else if((hour>18 || hour<7) && $('body').hasClass('matcha-dark')){
+        else if((hour>19 || hour<6) && $('body').hasClass('matcha-dark')){
             //后端根据时间关灯后，前端给出提示
             $('#light-switch').html('<span class="iconfont">&#xe7ee;</span>');
             $('#nav-light').html('<span class="iconfont">&#xe7ee;</span>');
-            toast('天晚了，已为您自动关灯');
+            toast('天晚了，为您自动关灯');
         }else if($('body').hasClass('matcha-dark')){
             $('#light-switch').html('<span class="iconfont">&#xe7ee;</span>');
             $('#nav-light').html('<span class="iconfont">&#xe7ee;</span>');
